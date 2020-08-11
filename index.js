@@ -38,7 +38,6 @@ const handleClick = () => {
 listButton.addEventListener("click", handleClick);
 
 export const handleKeyUp = (e) => {
-  if (data.accounts.length === 0) return;
   if (e.keyCode === 40 && document.activeElement.nextElementSibling) {
     document.activeElement.nextElementSibling.focus();
   } else if (
